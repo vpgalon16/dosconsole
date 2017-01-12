@@ -42,7 +42,6 @@ namespace Engine.TaskCommand
             Console.WriteLine("    - Renaming File / Directory  or File(s) / Directories ");
             Console.WriteLine("       RENAME *.[old ext] *.[new ext]");
             Console.WriteLine("       RENAME [Old File] [New File]");
-            Console.WriteLine("       RENAME [Old Folder] [New Folder]");
             Console.WriteLine("");
             Console.WriteLine("    - Make Directory or Creating new folder");
             Console.WriteLine("       MD [Directory Name]  i.e MD test");

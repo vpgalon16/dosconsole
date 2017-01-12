@@ -74,14 +74,19 @@ namespace Engine.TaskCommand
                     Console.WriteLine("      " + filename);
                 }
 
-                DirectoryInfo direc = new DirectoryInfo(path);
-                DirectoryInfo[] subDirs = direc.GetDirectories();
-                if (subDirs.Length > 0)
+                // ONly display the directory for all files
+                if (ext == "*")
                 {
-                    foreach (DirectoryInfo subDir in subDirs)
+                    DirectoryInfo direc = new DirectoryInfo(path);
+                    DirectoryInfo[] subDirs = direc.GetDirectories();
+                    if (subDirs.Length > 0)
                     {
-                        Console.WriteLine("<DIR> " + subDir.Name);
+                        foreach (DirectoryInfo subDir in subDirs)
+                        {
+                            Console.WriteLine("<DIR> " + subDir.Name);
+                        }
                     }
+
                 }
             }
             catch (Exception e)

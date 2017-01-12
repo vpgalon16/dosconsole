@@ -85,7 +85,7 @@ namespace DOSConsole
                 {
                     string extension;
                     if (commands.Length == 1)
-                        extension = "*.*";
+                        extension = "*";
                     else
                         extension = commands[1];
                     Engine.TaskCommand.DirManipulator listDIR = new Engine.TaskCommand.DirManipulator();
